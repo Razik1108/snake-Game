@@ -1,0 +1,112 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+canvas {
+  border: 2px solid #fff;
+  background-color: #222;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.menu button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #218838;
+}
+
+.scoreboard {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.developer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dpad {
+  width: 150px;
+  height: 150px;
+  background-color: #28a745;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.dpad::before,
+.dpad::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dpad::before {
+  width: 4px;
+  height: 70%;
+}
+
+.dpad::after {
+  height: 4px;
+  width: 70%;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #218838;
+}
