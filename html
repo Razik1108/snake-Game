@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu" id="startMenu">
+    <h1>Snake Game</h1>
+    <p>Press Start to Play</p>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="400" style="display:none;"></canvas>
+
+  <div class="scoreboard" id="scoreboard" style="display:none;">
+    <p>Score: <span id="score">0</span></p>
+  </div>
+
+  <div class="controls" id="controls" style="display:none;">
+    <div class="dpad" id="dpad"></div>
+    <button id="pauseBtn">Pause</button>
+  </div>
+
+  <div class="developer">
+    develop by Razik Ali
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
